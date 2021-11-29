@@ -1,8 +1,20 @@
+@import "bulma/sass/utilities/_all.sass"
+@import "bulma/sass/grid/columns.sass"
+
+
+
+
 .backg {
 background-image: url('./img/share-digital-transformation.jpg');
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
 height: 1000px;
+
+.title {
+    font-size: 100px;
+    color: white;
+
+}
 
 }
