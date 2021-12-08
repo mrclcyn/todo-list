@@ -1,27 +1,52 @@
- /* @import "bulma/sass/utilities/_all.sass"
- @import "bulma/sass/grid/columns.sass"  */
+ /* @import "bulma/sass/utilities/_all.sass" */
+ /* @import "bulma/sass/grid/columns.sass"  */
 
+ @font-face {
+  font-family: 'lemon_tuesdayregular';
+  src: url('lemon_tuesday-webfont.woff2') format('woff2'),
+       url('lemon_tuesday-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 
-*{
-    color: #fff;
-    box-sizing: border-box;
 }
 
+*{
+    /* color: #fff; */
+    /* box-sizing: border-box; */
+}
 
 .backg {
 background-image: url('./img/share-digital-transformation.jpg');
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
-height: 800px;
+height: 800px;}
 
-.title {
+
+.header {
+
+
+}
+
+.addSth {
+  opacity: 0.7;
+}
+
+#title2 {
     font-size: 100px;
     color: white;
+    font-family: 'lemon_tuesdayregular';
+    padding-top: 50px;
+    margin-bottom: 50px;
     }
+
+
+#myInput {
+  color: black;
 }
 
 .container {  
+
     text-align: center;  
     width: 300px;  
     height: 200px;  
@@ -29,14 +54,33 @@ height: 800px;
     padding-left: 90px; 
     }  
 
+    li {
+      color: #ffffff;
+      background-color:rgba(255, 255, 255, 0.329);
+      list-style:none;
+      margin: 8px;;
+      width: 40%;
+      height: 30px;
+      border-radius: 10px;
+    
+    }
+
+    .hid
+    {
+      display: none;
+    }
+
     ul li.checked {
-        color: #fff;
+     
         text-decoration: line-through;
+        
+        opacity: 0.7;
       }
       
       /* Add a "checked" mark when clicked on */
       ul li.checked::before {
-        /* content: ''; */
+      
+      
         position: absolute;
         border-color: #fff;
         border-style: solid;
@@ -48,3 +92,8 @@ height: 800px;
         width: 7px;
       }
       
+      .close {
+        padding: 20px;
+        color: white;
+        opacity: 0.5;
+      }
