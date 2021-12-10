@@ -1,6 +1,3 @@
-/* @import "bulma/sass/utilities/_all.sass" */
-/* @import "bulma/sass/grid/columns.sass"  */
-
 @font-face {
   font-family: "lemon_tuesdayregular";
   src: url("lemon_tuesday-webfont.woff2") format("woff2"),
@@ -9,22 +6,12 @@
   font-style: normal;
 }
 
-* {
-  /* color: #fff; */
-  /* box-sizing: border-box; */
-}
-
 .backg {
   background-image: url("./img/share-digital-transformation.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 800px;
-  
-  );
-}
-
-.header {
 }
 
 .addSth {
@@ -99,11 +86,8 @@ ul li.checked::before {
 }
 #myUL > li {
   display: block;
-  /* width: 40%;
-  max-width: 650px; */
   height: auto;
   padding: 20px;
-
   color: #fff;
   background-color: rgba(255, 255, 255, 0.137);
   list-style: none;
