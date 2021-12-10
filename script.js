@@ -39,12 +39,14 @@ function newElement() {
   }
   document.getElementById("myInput").value = "";
 
+  // Creating a Close x button
   var span = document.createElement("SPAN");
   var txt = document.createTextNode("\u00D7");
   span.className = "close";
   span.appendChild(txt);
   li.appendChild(span);
 
+  // Setting eventListener for every x button in the list
   let close = document.getElementsByClassName("close");
   for (let i = 0; i < close.length; i++) {
     close[i].onclick = function() {
@@ -55,7 +57,6 @@ function newElement() {
 }
 
 //    Clear All Button
-
 const clearAll = () => {
   clearThis = document.getElementById('myUL');
   clearThis.innerHTML = '';
@@ -65,6 +66,14 @@ const clearAll = () => {
 
 
 
-  
+const myInput = document.getElementById('myInput');
+myInput.onkeyup = (e) => {
+  e.preventDefault();
+  (e.code === 'Enter' || e.code === 'NumpadEnter') ? newElement() : '';
+}
+
+
+
+
 
 

@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="description" content="Todo List" />
     <meta name="keywords" content="Todo List" />
-    <meta name="author" content="Joanna, Arsalan, Seb, Debbie">
+    <meta name="author" content="Joanna, Seb, Debbie, Arsalan">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Todo List</title>
@@ -24,18 +24,13 @@
 
         <div id="myDIV" class="header text-center">
 
-            <input  class="is-large input is-rounded" type="text" id="myInput" placeholder="Write..." name="task">
+            <input  class="is-large input is-rounded" type="text" id="myInput" placeholder="Write & press Enter" name="task">
 
             
-            <span onclick="newElement()" class="addBtn addSth" class="material-icons">
-                <img src="./img/baseline_add_circle_outline_white_24dp.png" />
-                </span>
+            
             
           <center>
-<ul class="shadow p-3 mb-2 rounded"  id="myUL">
-                    <li class="hid">Hit the gym</li>
-                    <li class="checked hid">Pay bills</li>
-                </ul> 
+                <ul class="shadow p-3 mb-2 rounded"  id="myUL"></ul> 
                 <button onclick="clearAll()" id="clearAllBtn" type="button" class="btn btn-outline-info">Clear All</button>
 
           </center>
